@@ -1,6 +1,6 @@
 import os
 
-location = "D:/Certus/Dataops/python/datasets"
+location = "D:/Certus/Dataops/FINAL/ProyectoFinal_DataOPS/datasets"
 
 ###Validar que la carpeta exista###
 if not os.path.exists(location):
@@ -21,3 +21,4 @@ print(api.dataset_list(search='henryshan'))
 
 api.dataset_download_file('henryshan/starbucks','starbucks.csv',path=location,quiet=False)
 
+print(f"Se ha descargado el archivo exitosamente en {location}")
